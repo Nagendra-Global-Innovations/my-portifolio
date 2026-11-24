@@ -1,16 +1,19 @@
 User-agent: *
 Allow: /
 
-# ChatGPT Search crawler: allow discovery and citations in ChatGPT Search.
+User-agent: GPTBot
+Allow: /
+
 User-agent: OAI-SearchBot
 Allow: /
 
-# These are separate model-training controls, not search-indexing controls.
-# Search crawlers remain allowed above.
-User-agent: GPTBot
-Disallow: /
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
 
 User-agent: Google-Extended
-Disallow: /
+Allow: /
 
 Sitemap: https://avinashmudunuru.in/sitemap.xml
